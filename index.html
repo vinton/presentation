@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>はじめてのHTML5入門講座</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>はじめてのHTML5入門講座</h1>
+					<h3>HTML5プロフェッショナル認定試験レベル1対応</h3>
+				</section>
+
+				<section data-background="#ffffff">
+					<h2>本日のアジェンダ</h2>
+					<ol>
+						<li>HTML5とは</li>
+						<li>HTML5プロフェッショナル認定資格とは</li>
+						<li>試験概要・対策</li>
+						<li>学習方法</li>
+					</ol>
+				</section>
+				
+				<section data-background="#2f7579">
+					<h1>自己紹介</h1>
+				</section>
+				
+				<section data-background="#ffffff" style="text-align: left;">
+					<h2>宮山 義浩</h2>
+					<h3>Yoshihiro Miyayama</h3>
+					<ul>
+						<li>フロントエンドエンジニア</li>
+						<li>SE→FE＆DE→教育</li>
+						<li>HTML5プロフェッショナル認定試験レベル1取得</li>
+					</ul>
+				</section>
+				
+				<section data-background="#2f7579">
+					<h1>HTML5とは</h1>
+				</section>
+				
+				<section data-background="#ffffff">
+					<section>
+					<h2>そもそもHTMLって何？</h2>
+					</section>
+					
+					<section>
+						<h2>HTMLとは</h2>
+						<ul>
+							<li><strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguageの略</li>
+							<li>Webページを作るマークアップ言語</li>
+						</ul>
+					</section>
+					<section>
+						<h2>実際にHTMLを見てみましょう</h2>
+					</section>
+					<section>
+						<a href="https://www.seraku.co.jp/" target="_blank">
+							<img width="746" height="500" data-src="pictures/picture1.png">
+						</a>
+						<h3>画像をクリックするとページが表示します</h3>
+					</section>
+					<section>
+						<img width="" height="" data-src="pictures/picture2.png">
+						<h3>右クリックし、「ページのソースを表示」を選択</h3>
+					</section>
+					<section>
+						<h3>HTMLで書かれています</h3>
+						<img width="" height="" data-src="pictures/picture3.png">
+					</section>
+					<section>
+					　　 <h3>開始タグから終了タグまでの範囲を要素と呼ぶ</h3>
+						<pre><code class="hljs">&lt;title&gt;タイトルのテキスト&lt;/title&gt;</code></pre>
+						<p>タグで意味づけ（マークアップ）する</p>
+					</section>
+					
+				</section>
+				
+				<section data-background="#ffffff">
+					<section>
+						<h2>HTML5とは</h2>
+						<p>HTMLのバージョン5、改訂第5版のこと</p>
+					</section>
+					<section>
+						<h2>HTMLの歴史</h2>
+						<ul>
+							<li>1993年6月　HTML1.0</li>
+							<li>1995年11月 HTML 2.0</li>
+							<li>1997年12月 HTML 4.01</li>
+							<li>2014年10月 HTML 5</li>
+						</ul>
+					</section>
+					<section>
+						<h2>HTML5で新しく出来ること</h2>
+						<ol>
+							<li>文書構造やテキストの意味の明示</li>
+							<li>高機能なフォーム</li>
+							<li>メディアファイルの埋め込み</li>
+							<li>グラフィック描画</li>
+						</ol>
+					</section>
+					<section>
+						<h3>文書構造やテキストの意味の明示</h3>
+						<pre><code class="hljs">&lt;header&gt;...&lt;/header&gt;
+&lt;nav&gt;...&lt;/nav&gt;
+&lt;article&gt;
+  &lt;section&gt;...&lt;/section&gt;
+&lt;/article&gt;
+&lt;footer&gt;...&lt;/footer&gt;</code></pre>	
+					</section>
+					
+					<section>
+						<h3>高機能なフォーム</h3>
+						<pre><code class="hljs">&lt;input name=&quot;text&quot; type=&quot;text&quot; placeholder=&quot;例）東京都&quot;&gt;</code></pre>
+						<input name="text" type="text" placeholder="例）東京都">
+					</section>
+					
+					<section>
+						<h3>メディアファイルの埋め込み</h3>
+						<pre><code class="hljs">&lt;video width=&quot;500&quot; height=&quot;360&quot; controls&gt;
+  &lt;source src=&quot;free-video.mp4&quot; &gt;
+&lt;/video&gt;</code></pre>
+					</section>
+					
+					<section>
+						<h3>メディアファイルの埋め込み</h3>
+						<video width="700" height="500" controls><source src="free-video.mp4" ></video>
+					</section>
+					
+					<section>
+						<h3>グラフィック描画</h3>
+						<a href="http://helloracer.com/webgl/" target="_blank">
+							<img width="719" height="358" data-src="pictures/picture4.png">
+						</a>
+						<h3>画像をクリックするとページが表示します</h3>
+					</section>
+                    
+					<section id="fragments">
+						<h2>実はこのプレゼン、、、</h2>
+						<h2><span class="fragment">HTMLからできています!</span></h2>
+					</section>
+                </section>
+				
+				<section data-background="#ffffff">
+					<section>
+						<h2>対応しているデバイス</h2>
+						<ul>
+							<li>PC・タブレット端末</li>
+							<li>スマートフォン</li>
+							<li>電子書籍端末（Kindleなど）</li>
+							<li>最近のテレビ</li>
+							<li>車載システム（カーナビ）</li>
+						</ul>
+					</section>
+                    
+                    <section>
+						<h2>ワンソース・マルチデバイス</h2>
+					</section>
+                    <section>
+						<h3>アプリもHTML5で</h3>
+						<a href="http://helloracer.com/webgl/" target="_blank">
+							<img width="1001" height="506" data-src="pictures/picture5.png">
+						</a>
+						<h3>Apache Cordova</h3>
+					</section>
+				</section>
+                
+                
+                <section data-background="#2f7579">
+					<h1>HTML5プロフェッショナル<br>認定試験とは</h1>
+				</section>
+                
+                <section data-background="#ffffff">
+					<section>
+                        <p>HTML5,CSS3,JavaScriptなど最新のマークアップに関する技術力と知識を中立的な立場で認定する認定資格</p>
+                    </section>
+                    
+                    <section>
+                        <h3>試験で問われるスキルと知識</h3>
+							<img width="500" height="370" data-src="pictures/picture6.png">
+                    </section>
+                    
+                    <section>
+                        <h3>この資格がおすすめの職種</h3>
+						<ul>
+							<li>マークアップエンジニア</li>
+							<li>システムエンジニア</li>
+							<li>デザイナー</li>
+							<li>Webディレクター</li>
+						</ul>
+                    </section>
+                    
+                    <section>
+                        <h3>マークアップエンジニア</h3>
+						<ul>
+							<li>ネットワークやサーバなどのWebの基礎知識を身につけることができる</li>
+							<li>なんとなく書いていた部分など、より正しい文書構造でマークアップすることができる</li>
+						</ul>
+                    </section>
+                    
+                    <section>
+                        <h3>システムエンジニア</h3>
+						<ul>
+							<li>動的な処理をサーバーサイドで担当するか、JavaScriptで実装するかなど、最適な実装方法を導くための選択肢が増える</li>
+						</ul>
+                    </section>
+                    
+                    <section>
+                        <h3>デザイナー</h3>
+						<ul>
+							<li>レスポンシブWebデザインにおける実現方法をイメージしながらデザインできる</li>
+							<li>アニメーション等の実装イメージがつく</li>
+						</ul>
+                    </section>
+                    
+                    <section>
+                        <h3>Webディレクター</h3>
+						<ul>
+							<li>実現可能な技術を把握し、顧客に対してより具体的な提案ができるようになる</li>
+							<li>エンジニアに対して説得力ある提言ができるようになる</li>
+						</ul>
+                    </section>
+				</section>
+                
+                <section data-background="#2f7579">
+					<h1>試験概要・対策</h1>
+				</section>
+                
+                <section data-background="#ffffff">
+					<section>
+                        <h2>試験概要</h2>
+                        <ul>
+                            <li>試験時間：<strong>90</strong>分（アンケート時間含む）</li>
+                            <li>問題数：約<strong>60</strong>問</li>
+                            <li>受験料：<strong>16,200</strong>円（税込）</li>
+                            <li>試験方式：CBT</li>
+                            <li>日時・会場：全国各地から自由に選択</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>合格ラインは約7割</h2>
+                    </section>
+                    <section>
+                        <h2>出題範囲</h2>
+                        <ul>
+                            <li>Webの基礎知識</li>
+                            <li>CSS</li>
+                            <li>要素</li>
+                            <li>レスポンシブWebデザイン</li>
+                            <li>APIの基礎知識</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>出題形式</h2>
+                        <ul>
+                            <li>選択式</li>
+                            <li>記述式</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>出題例</h3>
+                        HTML5の文書型宣言として間違っているものを2つ選びなさい。
+                        
+                        <pre><code class="hljs">A． &lt;!doctype&gt;
+B． &lt;!doctype html&gt;
+C． &lt; !DOCTYPE HTML&gt;
+D． &lt;!DOCTYPE HTML &gt;
+E． &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</code></pre>
+                    </section>
+                    
+                    <section>
+                        <h3>出題例</h3>
+                        CSSのアニメーションの@keyframesの書式内において、「100%」の代わりに使用できるキーワードを記述しなさい。
+                    </section>
+				</section>
+                
+                
+                <section data-background="#2f7579">
+					<h1>試験内容を実際に動かす</h1>
+				</section>
+                
+                <section data-background="#ffffff">
+					<section>
+                        <h3>本日使うエディター</h3>
+						<a href="https://codepen.io/" target="_blank">
+							<img width="1058" height="486" data-src="pictures/picture7.png">
+						</a>
+                    </section>
+                    <section>
+                        <h2>CSS</h2>
+                        <p>すべて大文字にする</p>
+						<pre><code class="hljs">&lt;p&gt;Home Page&lt;/p&gt;</code></pre>
+                    </section>
+                    
+                    <section>
+                        <h2>CSS</h2>
+                        <p>表の１行目だけに色をつける</p>
+						<pre><code class="hljs">&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;なす&lt;/td&gt;&lt;td&gt;だいこん&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;なす&lt;/td&gt;&lt;td&gt;だいこん&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;なす&lt;/td&gt;&lt;td&gt;だいこん&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;なす&lt;/td&gt;&lt;td&gt;だいこん&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                    </section>
+                    
+                    <section>
+                        <h2>CSS</h2>
+                        <p>背景色を半透明にする</p>
+						<pre><code class="hljs">&lt;div class=&quot;bg&quot;&gt;テスト&lt;/div&gt;</code></pre>
+                    </section>
+                    
+                    <section>
+                        <h2>CSS</h2>
+                        <p>メディアクエリ</p>
+						<pre><code class="hljs">幅480ピクセル未満は赤、それ以上は緑</code></pre>
+                    </section>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
