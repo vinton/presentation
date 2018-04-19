@@ -48,7 +48,7 @@
 					<ul>
 						<li>フロントエンドエンジニア</li>
 						<li>SE→FE＆DE→教育</li>
-						<li>HTML5プロフェッショナル認定試験レベル1取得</li>
+						<li>HTML5プロフェッショナル認定試験レベル1取得<br>※2017年12月</li>
 					</ul>
 				</section>
 				
@@ -105,6 +105,8 @@
 							<li>1995年11月 HTML 2.0</li>
 							<li>1997年12月 HTML 4.01</li>
 							<li>2014年10月 HTML 5</li>
+                            <li>2016年11月 HTML 5.1</li>
+                            <li>2017年12月 HTML 5.2</li>
 						</ul>
 					</section>
 					<section>
@@ -283,11 +285,25 @@ B． &lt;!doctype html&gt;
 C． &lt; !DOCTYPE HTML&gt;
 D． &lt;!DOCTYPE HTML &gt;
 E． &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</code></pre>
+                        <p class="fragment current-visible">正解：A、C</p>
+                    </section>
+                    
+                    <section>
+                        <h3>出題例</h3>
+                        HTML5のtitle要素に関する記述のうち、間違っているものをすべて選びなさい。
+                        
+                        <pre><code class="hljs">A． 1つのHTML文書に必ず1つ必要。
+B． head要素内に配置する。
+C． 複数は配置できない。
+D． 要素内容にはテキストしか入れられない。
+E． 条件によっては終了タグを省略できる。</code></pre>
+                        <p class="fragment current-visible">正解：A、E</p>
                     </section>
                     
                     <section>
                         <h3>出題例</h3>
                         CSSのアニメーションの@keyframesの書式内において、「100%」の代わりに使用できるキーワードを記述しなさい。
+                        <p class="fragment current-visible">正解：to</p>
                     </section>
 				</section>
                 
@@ -304,34 +320,122 @@ E． &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</code></
 						</a>
                     </section>
                     <section>
-                        <h2>CSS</h2>
-                        <p>すべて大文字にする</p>
-						<pre><code class="hljs">&lt;p&gt;Home Page&lt;/p&gt;</code></pre>
+                        <p>「Create」をクリックし、「New Pen」を選択</p>
+						<img width="581" height="443" data-src="pictures/picture8.png">
                     </section>
-                    
                     <section>
-                        <h2>CSS</h2>
+                        <p>「Change View」をクリックし、レイアウトを選択</p>
+						<img width="600" height="426" data-src="pictures/picture9.png">
+                    </section>
+                    <section>
+                        <p>データベースに登録された英語住所が大文字小文字混在しているため、CSSを用い、すべて大文字で表示したい。text-transform プロパティで指定する値として適切なのは次のうちどれか。</p>
+                        <pre><code class="hljs">A． uppercase
+B． lowercase
+C． capitalize
+D． acronym
+E． abbreviation</code></pre>
+                    </section>
+                    <section>
+                        <p>正解：A</p>
+                        <pre><code class="hljs">p {
+  text-transform: uppercase;
+}</code></pre>
+                    </section>
+                    <section>
+                        <p>1つめのtr要素にのみスタイルを適用するセレクタをすべて選びなさい。</p>
+                        <pre><code class="hljs">A． tr:first-child
+B． tr:nth-child(1)
+C． tr:nth-child(0n+1)
+D． tr:nth-child(1n)
+E． tr:nth-child(1n+0)</code></pre>
+                    </section>
+                    <section>
                         <p>表の１行目だけに色をつける</p>
 						<pre><code class="hljs">&lt;table&gt;
-&lt;tr&gt;&lt;td&gt;なす&lt;/td&gt;&lt;td&gt;だいこん&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;なす&lt;/td&gt;&lt;td&gt;だいこん&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;なす&lt;/td&gt;&lt;td&gt;だいこん&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;なす&lt;/td&gt;&lt;td&gt;だいこん&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1993年6月&lt;/td&gt;&lt;td&gt;HTML1.0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1995年11月&lt;/td&gt;&lt;td&gt;HTML 2.0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1997年12月&lt;/td&gt;&lt;td&gt;HTML 4.01&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2014年10月&lt;/td&gt;&lt;td&gt;HTML 5&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;</code></pre>
                     </section>
-                    
                     <section>
-                        <h2>CSS</h2>
-                        <p>背景色を半透明にする</p>
-						<pre><code class="hljs">&lt;div class=&quot;bg&quot;&gt;テスト&lt;/div&gt;</code></pre>
+                        <p>正解：A,B,C</p>
+                        <pre><code class="hljs">tr:first-child {
+  background: #eee;
+}
+tr:nth-child(1) {
+  background: #eee;
+}
+tr:nth-child(0n+1) {
+  background: #eee;
+}
+</code></pre>
+                        </section>
+                    <section>
+                        <p>メディアクエリを利用し、幅400ピクセル未満の時は背景を赤に、それより大きい場合は青としたい。</p>
+                        <pre><code class="hljs">body {
+  background-color: red;
+}
+@media screen and (　　　1　　　){
+  body {
+    background-color: blue;
+  }
+}</code></pre>
                     </section>
-                    
                     <section>
-                        <h2>CSS</h2>
-                        <p>メディアクエリ</p>
-						<pre><code class="hljs">幅480ピクセル未満は赤、それ以上は緑</code></pre>
+                        <p>正解：min-width:400px</p>
+                        <pre><code class="hljs">body {
+  background-color: red;
+}
+@media screen and ( min-width:400px ){
+  body {
+    background-color: blue;
+  }
+}</code></pre>
                     </section>
                 </section>
+                
+                <section data-background="#2f7579">
+					<h1>学習方法</h1>
+				</section>
+                
+                <section data-background="#ffffff">
+					<section>
+                        <h3>認定テキスト＆問題集</h3>
+                        <p>試験範囲を網羅している認定の教材です。<br>別途模擬試験が用意されています。</p>
+						<a href="https://www.amazon.co.jp/HTML5%E3%83%97%E3%83%AD%E3%83%95%E3%82%A7%E3%83%83%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E8%AA%8D%E5%AE%9A%E8%A9%A6%E9%A8%93-%E5%AF%BE%E7%AD%96%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%EF%BC%86%E5%95%8F%E9%A1%8C%E9%9B%86-Mynavi-Examination-Library/dp/4839953562" target="_blank">
+							<img width="320" height="414" data-src="pictures/picture10.png">
+						</a>
+                    </section>
+                    <section>
+                        <h3>WEB問題集「Ping-t」</h3>
+                        <p>PCでもスマホでも学習可能！470問以上収録。</p>
+						<a href="https://ping-t.com/" target="_blank">
+							<img width="800" height="464" data-src="pictures/picture11.png">
+						</a>
+                    </section>
+                    <section>
+                        <h1>実際に書くことが大事</h1>
+                    </section>
+                </section>
+                
+                <section data-background="#2f7579">
+					<h1>最新情報の集め方</h1>
+				</section>
+                
+                <section data-background="#ffffff">
+					<section>
+                        <h3>おすすめサイト</h3>
+                        <ul>
+                            <li><a href="http://coliss.com/" target="_blank">コリス</a></li>
+                            <li><a href="https://html5experts.jp/" target="_blank">HTML5Experts.jp</a></li>
+                            <li><a href="https://ics.media/" target="_blank">ICS MEDIA</a></li>
+                            <li><a href="https://www.webprofessional.jp/" target="_blank">WPJ</a></li>
+                            <li><a href="https://qiita.com/" target="_blank">Qiita</a></li>
+                        </ul>
+                    </section>
+                </section>
+                
 			</div>
 		</div>
 
